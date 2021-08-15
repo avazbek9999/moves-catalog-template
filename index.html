@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section class="move">
+        <div class="container">
+
+            <h2 class="move__headding">Moves Catalog</h2>
+            <form class="move__form">
+                <label class="move__form__label">
+                    <input type="search" class="move__form__input" name="move_search" placeholder="Qidiring...">
+                </label>
+
+                <label class="move__form__label">
+                    Janirlar bo'ycha qidiruv
+                    <select class="move__form__select move__form__select-genre" name="move__ganre">
+                        <option value="All">All</option>
+                    </select>
+                </label>
+
+
+                <label class="move__form__label">
+                    Filterlash
+                    <select class="move__form__select move__form__select-sort" name="move__ganre">
+                        <option value="all">All</option>
+                        <option value="a-z">A-Z</option>
+                        <option value="z-a">Z-A</option>
+                        <option value="old-new">OLD-NEW</option>
+                        <option value="new-old">NEW-OLD</option>
+                    </select>
+                </label>
+
+                <button class="move__form__sobmit-btn" type="submit">Qidirish</button>
+            </form>
+
+            <ul class="move__list"></ul>
+
+        </div>
+    </section> 
+
+    <template id="move__template">
+         <li class="move__item">
+            <img class="move__img" src="https://via.placeholder.com/150" alt="template image" width="150"
+            height="200">
+
+            <h3 class="move__item__headding">Avangars</h3>
+            <p class="move__item__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <time class="move__item__date" datetime="2012-10-08">2012-10-08</time>
+
+            <ul class="move__ganres-list">
+                <li class="move__ganre">Action</li>
+                <li class="move__ganre">Fantastic</li>
+            </ul>
+         </li>
+    </template>
+       
+    
+
+    <script src="./js/utils.js"></script>
+    <script src="./js/films.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
